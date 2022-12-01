@@ -1,0 +1,625 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0;padding: 0;}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+#nav ul li{font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;}
+
+#nav{background-image: linear-gradient(to left,#F8EFBA 33%,#FAEC9A 66%,cornsilk 100%);}
+
+.slider{height: 650px;}
+
+.snippet1{background-color: darkgray;
+background-image: url("Images/snippet1.jpg");
+background-blend-mode: multiply;
+background-size: 100% 100%;
+height: 280px;
+border: none !important;
+transition: 2s;}
+
+.snippet1 .card-text{font-family:Copperplate, Papyrus, fantasy;font-size: 25px;font-weight: bolder;color: white;}
+
+.snippet1:hover{transform: scale(1.2);}
+
+.snippet2{background-color: darkgray;
+background-image: url("Images/snippet2.jpg");
+background-blend-mode: multiply;
+background-size: 100% 100%;
+height: 280px;
+border: none !important;
+transition: 2s;}
+
+.snippet2 .card-text{font-family:Copperplate, Papyrus, fantasy;font-size: 25px;font-weight: bolder;color: white;}
+
+.snippet2:hover{transform: scale(1.2);}
+
+.snippet3{background-color: darkgray;
+background-image: url("Images/snippet3.jpg");
+background-blend-mode: multiply;
+background-size: 100% 100%;
+height: 280px;
+border: none !important;
+transition: 2s;}
+
+.snippet3 .card-text{font-family:Copperplate, Papyrus, fantasy;font-size: 25px;font-weight: bolder;color: white;}
+
+.snippet3:hover{transform: scale(1.2);}
+
+.overflow{overflow: hidden;}
+
+#heading{font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;font-size: 28px;font-weight: 800;font-style: italic;}
+
+.card{border: none !important;}
+
+.card-text{font-family: "Calisto MT","Bookman Old Style",Bookman,"Goudy Old Style",Garamond,"Hoefler Text","Bitstream Charter",Georgia,serif;font-weight: bold;text-align: center;}
+
+.price{color: #772f22;font-size: 22px;display: flex;justify-content:center;align-items: center;}
+
+.price del{font-size: 12px;color: grey;}
+
+.price .discount{
+    font-size: 12px;
+    background-color: #fde6c6;
+    padding: 2px;
+}
+.title{font-family: "Calisto MT","Bookman Old Style",Bookman,"Goudy Old Style",Garamond,"Hoefler Text","Bitstream Charter",Georgia,serif;}
+
+.text{font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;color: #F26743;font-weight: 200;}
+
+ 
+.type {
+font-family: monospace;
+  color:#0000;
+  background:
+    linear-gradient(-90deg,black 2px,#0000 0) 10px 0,
+    linear-gradient(black 0 0) 0 0;
+  background-size:calc(var(--n)*4.5ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+   b .7s infinite steps(1),   
+   t calc(var(--n)*.3s) steps(var(--n)) forwards;
+}
+
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -200%,0 0}
+}
+
+.modal-backdrop{
+  z-index: 2;
+}
+
+.modal-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.modal-body {
+  padding: 0;
+}
+.btn-close {
+  position: absolute;
+  right: 0;
+  padding: 1em;
+}
+h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+.myform {
+  padding: 2em;
+  max-width: 100%;
+  color: #fff;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+}
+@media (max-width: 576px) {
+  .myform {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+.form-control:focus {
+  box-shadow: inset 0 -1px 0 #7e7e7e;
+}
+.form-control {
+  background-color: inherit;
+  color: #fff;
+  padding-left: 0;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+}
+.myform .btn {
+  width: 100%;
+  font-weight: 800;
+  background-color: #fff;
+  border-radius: 0;
+  padding: 0.5em 0;
+}
+.myform .btn:hover {
+  background-color: inherit;
+  color: #fff;
+  border-color: #fff;
+}
+.p {
+  text-align: center;
+  padding-top: 2em;
+  color: grey;
+}
+.p a {
+  color: #e1e1e1;
+  text-decoration: none;
+}
+.p a:hover {
+  color: #fff;
+}
+.logo{color: #E3AE12;
+    -webkit-text-stroke:.75px black;}
+.body{background-image: url("Images/background.jpg");
+background-size: cover;
+background-attachment: fixed;}
+
+.form{border: 4px solid white;border-radius: 4px;padding: 9px;}
+.form::placeholder{color: white;font-size: 22px;opacity: 0.8;}
+.form:focus{background-color: transparent !important;border: 4px solid white;color: white;box-shadow: none;}
+.form:focus::placeholder{opacity: 1;}
+.form{resize: none;}
+#btn{border-radius: 0 !important;}
+
+.first_h1{
+        color: transparent;
+        -webkit-text-stroke: 2px ghostwhite;}
+.second_h1{
+            color: white;
+            animation: water ease-in-out 2s infinite;
+        }
+        @keyframes water{
+            0%,100%{clip-path: polygon(0 34%, 18% 44%, 42% 50%, 65% 58%, 79% 59%, 89% 55%, 100% 51%, 99% 100%, 0% 100%);}
+            50%{clip-path: polygon(0 69%, 22% 61%, 45% 59%, 60% 43%, 78% 40%, 93% 28%, 100% 28%, 99% 100%, 0% 100%);}
+        }
+.hover{transition: 1s;}
+.hover:hover{background-color: skyblue;}
+.card-head{border: none;border-bottom: 2px solid #dee2e6;}
+
+.icons{font-size: 25px;}
+.select{font-family: 'Josefin Sans', sans-serif;
+font-weight: 400;padding: 5px;}
+
+.hover-brown{transition: .5s;font-weight: 500;cursor: pointer;}
+.hover-brown:hover{color: saddlebrown;}
+
+.btn-up{transition: 1s;}
+.btn-up:hover{background-color: sandybrown;color: white;}
+
+.card-hover{transition: .5s;}
+.card-hover:hover{box-shadow: 0 0 10px 0 gainsboro !important;}
+
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item .item{
+	float:left;
+	margin-bottom:10px;
+}
+
+
+
+.sphere-box{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform-origin: bottom center;
+}
+.sphere-box::before{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    background: rgba(255, 255, 255, 0.05);
+    width: 10px;
+    height: 5px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1000;
+    
+}
+.shine{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: red;
+    border-radius: 50%;
+    transform-origin: top center;
+    animation: wavey 10s linear infinite;
+}
+@keyframes wavey{
+    100%,0%{
+			background-color: rgb(255,0,0);
+		}
+		8%{
+			background-color: rgb(255,127,0);
+		}
+		16%{
+			background-color: rgb(255,255,0);
+		}
+		25%{
+			background-color: rgb(127,255,0);
+		}
+		33%{
+			background-color: rgb(0,255,0);
+		}
+		41%{
+			background-color: rgb(0,255,127);
+		}
+		50%{
+			background-color: rgb(0,255,255);
+		}
+		58%{
+			background-color: rgb(0,127,255);
+		}
+		66%{
+			background-color: rgb(0,0,255);
+		}
+		75%{
+			background-color: rgb(127,0,255);
+		}
+		83%{
+			background-color: rgb(255,0,255);
+		}
+		91%{
+			background-color: rgb(255,0,127);
+		}
+}
+
+/*Not my work*/
+
+.cover-img{
+	height: 400px;
+	background-image: url("Images/decoration.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+
+.our-cake-heading p{
+	font-size: 40px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-weight: 600;
+	color: chocolate;
+}
+
+.store-discription h6{
+	margin-top: 110px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: #313131;
+}
+
+.store-discription h1{
+	font-weight: inherit;
+	font-size: 55px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	color: chocolate;
+}
+
+.store-discription p{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 16px;
+	color: #313131;
+}
+
+.imge2{
+	background-color: blue;
+	position: relative;
+	top: 150px;
+	left: 67px;
+}
+
+.store-discription button{
+	position: relative;
+	width: 150px;
+	height: 40px;
+	border: 1px solid chocolate;
+	font-family: sans-serif;
+	font-size: 14px;
+	background-color: white;
+	color: chocolate;
+	transition: 0.5s;
+}
+
+#heading-about{
+	margin-top: 100px!important;
+	font-weight: lighter;
+	font-size: 20px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	color: chocolate;
+	text-shadow: 10px 10px 8px sandybrown;
+}
+
+#team-img{
+	border-radius: 50%;
+	height: 180px;
+	width: 180px;
+	margin: 0 auto;
+	transition: 0.5s;
+}
+
+#team-img:hover{
+	box-shadow: 0px 0px 20px 1px grey;
+	transform: scale(1.1);
+}
+.about-us{
+	font-size: 25px;
+	color: antiquewhite;
+}
+
+.h230{
+	font-size: 90px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	color: chocolate;
+}
+
+.SHOPES{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color:currentColor;
+}
+
+.number-container{
+	height: 200px;
+	background-color: beige;
+}
+
+#shop-btn:hover{
+	background-color: chocolate;
+	color: white;
+	border: none;
+}
+
+#h5 {
+  text-align: center;
+  font-size: 25px;
+}
+
+#cardss {
+  transition: 0.8s ease;
+  background-color: #f8efba;
+}
+
+#cardss:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.8s ease;
+}
+
+.productname {
+  font-size: 50px;
+  color: black;
+  text-align: center;
+}
+
+#para {
+  font-size: 30px;
+}
+
+#para5 {
+  text-align: center;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#para4 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#card100 {
+  border: 2px solid sandybrown;
+  border-radius: 20px;
+  background-color: sandybrown;
+  transition: 0.8s ease;
+}
+
+#card100:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.8s ease;
+}
+
+.para100 {
+  font-size: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+.span {
+  color: rgb(229, 140, 63);
+}
+
+#circle {
+  border-radius: 70px;
+  background-color: #7e7e7e;
+}
+
+.card-about {
+  cursor: pointer;
+  background-color: sandybrown;
+}
+.hd {
+  font-size: 25px;
+  font-weight: 550;
+}
+./*card.hover,*/
+.card-about:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.img {
+  margin-bottom: 35px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.card-about .card-title {
+  font-weight: 600;
+}
+button.focus,
+button:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+.ft {
+  margin-top: 25px;
+}
+.chk {
+  margin-bottom: 5px;
+}
+.rck {
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+.parabg {
+  background-color: rgb(187, 187, 187);
+  border: solid 2px rgb(187, 187, 187);
+  border-radius: 30px;
+}
+
+.para101 {
+  color: black;
+}
+
+#tile100 {
+  font-size: 30px;
+  color: black;
+}
+
+#carousel00 { 
+  width: 100%;
+  height: 500px;
+}
+
+#service {
+  font-size: 90px;
+}
+
+/* extra */
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+
+
+
+.typing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: #4FC3F7;
+    animation: cursorBlink 0.8s steps(3) infinite;
+}
+
+@keyframes cursorBlink {
+
+    0%,
+    75% {
+        opacity: 1;
+    }
+
+    76%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.typing {
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.typing h2 {
+    position: relative;
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-size: 4rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    animation: type 5s steps(11) infinite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes type {
+
+    0%,
+    100% {
+        width: 0px;
+    }
+
+    30%,
+    60% {
+        width: 394.09px;
+    }
+}
+
+@media(max-width: 330px) {
+    .typing h2 {
+        font-size: 3rem;
+        animation: type 5s steps(10) infinite;
+    }
+
+    @keyframes type {
+
+        0%,
+        100% {
+            width: 0px;
+        }
+
+        30%,
+        60% {
+            width: 305px;
+        }
+    }
+}
+
+
+
+
+
+
