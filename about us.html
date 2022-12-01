@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakerz Bite | About us</title>
+     <!--Website icon-->
+    <link rel="shortcut icon" href="assets/Images/Bakery logo.png">
+    
+	<!--This is my Bootstrap CSS File-->
+	<link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!--This is my FontAwesome CSS File-->
+	<link href="assets/Font Awesome/css/all.min.css" rel="stylesheet">
+	
+	<!--This is my Customized CSS File-->
+	<link href="assets/styles.css" rel="stylesheet">
+    
+    <!--This is my WOW CSS File-->
+    <link href="assets/WOW/animate.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="assets/Images/Bakery logo.png" alt="" height="70px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about us.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact us.html">Contact us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="cakes.html">Cakes</a></li>
+            <li><a class="dropdown-item" href="pastries.html">Pastries</a></li>
+			 <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+			 <li><a class="dropdown-item" href="pies.html">Pies</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+        <!-- Right elements -->
+    <div class="d-flex align-items-end my-2">
+        <!-- Notifications -->
+      <div class="dropdown">
+        <a class="text-reset me-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-bell"><span class="badge rounded-pill badge-notification bg-danger">3</span></i>
+        </a><ul class="dropdown-menu dropdown-menu-sm-start" aria-labelledby="navbarDropdownMenuLink"><li><a class="dropdown-item" href="#">Get discounts</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="index.html#feature">Featured products</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="contact us.html#help">Help</a>
+          </li>
+        </ul> 
+        </div>
+        <!-- Icon -->
+      <a class="text-reset me-3" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <i class="fas fa-shopping-cart"><span class="badge rounded-pill badge-notification bg-danger">0</span></i>
+      </a>
+      </div>
+        
+        
+      <form class="d-flex justify-content-center">
+          
+          <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="myform bg-dark">
+                <h1 class="text-center">Login Form</h1>
+                <form>
+                    <div class="mb-3 mt-4">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                    <p class="p">Not a member? <a href="#">Signup now</a></p>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+          
+          <button class="btn btn-primary me-2 my-2"  data-bs-toggle="modal" data-bs-target="#ModalForm">Sign in</button>
+        <input class="form-control me-2 w-auto my-2" type="search" placeholder="Search" aria-label="Search" style="background-color: white;padding: 5px;border-radius: 5px;padding-left: 3px;">
+        <button class="btn btn-outline-success my-2" type="submit">Search</button>
+      </form>
+        <section class="sphere m-2">
+         <div class="sphere-box">
+             <div class="shine"></div>
+         </div>
+    </section>
+    </div>
+  </div>
+</nav>
+    <!--This is the 'add to cart' offcanvas-->
+    <div class="offcanvas offcanvas-end w-50" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" style="min-width: 100px;max-width: 300px;">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><i class="fa-solid fa-cart-shopping"></i></h5>
+    <button type="button" class="btn-close text-reset m-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+        <hr>
+  <div class="offcanvas-body text-center">
+    <p>No products in the cart.</p>
+  </div>
+</div>
+    <!--This is the 'add to cart' offcanvas-->
+<!-- Navbar -->
+   
+    <!--Content section start here-->
+	<div class="container-fluid cover-img d-flex align-items-center"> 
+	<div class="ms-4 about-us "><h1> ABOUT US</h1> </div>
+	</div>
+	
+	
+	<div class="container-fluid our-cake">
+		<div class="row mt-4">
+		<div class="our-cake-heading col text-center "> <p> QUALITY &amp; PASSION WITH  </p>  </div></div>
+		<div class="row">
+		<div class="our-cake-heading col text-center"> <p>  OUR CAKE </p>  </div>
+		</div>
+		</div>
+	
+	<div class="container">
+		<div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1 mt-3 justify-content-center">
+	<div class="card my-4">
+  <img src="assets/Images/Walnut Truffle.png" class="card-img-top shadow" alt="..." style="">
+</div>
+	<div class="card my-4">
+  <img src="assets/Images/products cakes images/Swiss Carrot Cake2.png" class="card-img-top shadow" alt="...">
+</div>
+		</div>
+		</div>
+	
+	
+	<div class="container-fluid mb-5 mt-5">
+	<div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1">
+		<div class="col-lg-6 store-discription text-center"> <h6>HISTORY</h6> <h1>OUR STORY</h1> <p class="p-5 ms-5 
+			me-5">Bakerz bite is dedicated to creating and providing the ultimate in luxury gifts for all age groups. We use only fairly traded, organically grown, premium quality products sourced from small-scale farmers, supporting farming communities through trade rather than aid.</p> <button id="shop-btn">SHOP NOW</button>  </div>
+		
+		<div class="col-lg-6 store-imge d-flex justify-content-center my-5"> 
+		
+			<div class="img3"><img src="assets/Images/Bakery.jpg" class="img-h position-absolute mt-5 shadow-lg img-fluid" alt="..."></div>
+			<div class="img4"><img src="assets/Images/Chef.jpg" class="imge2 img-h position-relative mb-5 shadow-lg img-fluid" alt="..."></div>
+		</div>
+	</div>
+	</div>
+    
+    <!--Team Section Starts Here-->
+	<div class="container text-center mb-5 " id="headingcontainer">
+	<div id="heading-about"><h1> MEET OUR CHEF </h1></div>
+	</div>
+	
+	<div class="container-fluid mt-5 mb-2 ">
+	<div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-1">
+  <div class="col border-5">
+    <div class="card bg-transparent">
+      <img src="assets/Images/About_TB_04.png" id="team-img" class="card-img-top img-h position-relative " alt="...">
+      <div class="card-body">
+        <h4 class="card-title text-center" style="color: chocolate;">Adam Strass</h4>
+		  <h6 class="card-title text-center">RESTAURANT MANAGER</h6>
+        <p class="card-text text-center">Jelly topping halvah caramels sweet cake gummi bears toffee.</p>
+		  
+      </div>
+		
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-transparent" style="height: 100%;">
+       <img src="assets/Images/About_TB_01.png" id="team-img" class="card-img-top img-h" alt="...">
+      <div class="card-body">
+         <h4 class="card-title text-center" style="color: chocolate;">Linda Heyes</h4>
+		  <h6 class="card-title text-center">PASTRY CHEF</h6>
+        <p class="card-text text-center">Jelly topping halvah caramels sweet cake gummi bears toffee.</p>
+      </div>
+		
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-transparent">
+      <img src="assets/Images/About_TB_02.png" id="team-img" class="card-img-top img-h" alt="...">
+      <div class="card-body">
+          <h4 class="card-title text-center" style="color: chocolate;">James Coleman</h4>
+		  <h6 class="card-title text-center">EXPERT IN SANDWICH MAKING</h6>
+        <p class="card-text text-center">Jelly topping halvah caramels sweet cake gummi bears toffee.</p>
+      </div>
+		
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-transparent">
+      <img src="assets/Images/About_TB_03.png" id="team-img" class="card-img-top img-h" alt="...">
+      <div class="card-body">
+        <h4 class="card-title text-center" style="color: chocolate;">Jennifer Doe</h4>
+		  <h6 class="card-title text-center">EXPERT IN CAKE MAKING</h6>
+        <p class="card-text text-center">Jelly topping halvah caramels sweet cake gummi bears toffee.</p>
+      </div>
+		
+    </div>
+  </div>
+</div>
+		</div>
+	<!--Team Section Ends Here-->
+	<!--Content section ends here-->
+    
+     <!--Footer section starts here-->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid mt-5">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-black"
+          style="background-image: linear-gradient(to left,#F8EFBA 33%,#FAEC9A 66%,cornsilk 100%);"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class=" mb-2">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              
+            <h6 class="text-uppercase mb-4 font-weight-bold text-warning fs-5 logo" style="font-family: cursive;">
+             <img src="assets/Images/Bakery logo.png" alt="" class="w-25"> Bakerz Bite
+            </h6>
+           <span class="type" style="--n:53">Bakerz Bite offers a wide range of baked goods made fresh in-store every day. The bakery chain offers more than 300 different kinds of baked goods, including artisan pastries, gourmet cakes and desserts, and handcrafted beverages.</span>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-5">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-black" href="cakes.html" style="text-decoration: underline;">Cakes</a>
+            </p>
+            <p>
+              <a class="text-black" href="pastries.html" style="text-decoration: underline;">Pastries</a>
+            </p>
+            <p>
+              <a class="text-black" href="cookies.html" style="text-decoration: underline;">Cookies</a>
+            </p>
+            <p>
+              <a class="text-black" href="pies.html" style="text-decoration: underline;">Pies</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
+            <h6 class="text-uppercase mb-4 mt-5 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Karachi, North Karachi, Pakistan</p>
+            <p><i class="fas fa-envelope mr-3"></i> bakerzbite@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-5">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Facebook -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #3b5998"
+               href="https://facebook.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #55acee"
+               href="https://twitter.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #dd4b39"
+               href="https://google.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #ac2bac"
+               href="https://instagram.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #0082ca"
+               href="https://linkedin.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-linkedin-in"></i
+              ></a>
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #333333"
+               href="https://github.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-github"></i
+              ></a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(100, 0, 0, 0.2)"
+         >
+      © 2022 Copyright:
+      <a class="text-white" href="index.html"
+         >Bakerzbite.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+    
+    <!--Footer section ends here-->
+
+</body>
+    <!--This is my Bootstrap Javascript File-->
+    <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+    
+    <!--This is my jQuery File-->
+    <script src="assets/jquery/jquery.js"></script>
+    
+    <!--This is my WOW Javascript File-->
+    <script src="assets/WOW/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</html>

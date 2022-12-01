@@ -1,0 +1,1265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakerz Bite | Cookies</title>
+     <!--Website icon-->
+    <link rel="shortcut icon" href="assets/Images/Bakery logo.png">
+    
+	<!--This is my Bootstrap CSS File-->
+	<link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!--This is my FontAwesome CSS File-->
+	<link href="assets/Font Awesome/css/all.min.css" rel="stylesheet">
+	
+	<!--This is my Customized CSS File-->
+	<link href="assets/styles.css" rel="stylesheet">
+    
+    <!--This is my WOW CSS File-->
+    <link href="assets/WOW/animate.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+           <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="assets/Images/Bakery logo.png" alt="" height="70px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about us.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact us.html">Contact us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="cakes.html">Cakes</a></li>
+            <li><a class="dropdown-item" href="pastries.html">Pastries</a></li>
+			 <li><a class="dropdown-item active" aria-current="page" href="cookies.html">Cookies</a></li>
+			 <li><a class="dropdown-item" href="pies.html">Pies</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+        <!-- Right elements -->
+    <div class="d-flex align-items-end my-2">
+        <!-- Notifications -->
+      <div class="dropdown">
+        <a class="text-reset me-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-bell"><span class="badge rounded-pill badge-notification bg-danger">3</span></i>
+        </a><ul class="dropdown-menu dropdown-menu-sm-start" aria-labelledby="navbarDropdownMenuLink"><li><a class="dropdown-item" href="#">Get discounts</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="index.html#feature">Featured products</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="contact us.html#help">Help</a>
+          </li>
+        </ul> 
+        </div>
+        <!-- Icon -->
+      <a class="text-reset me-3" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <i class="fas fa-shopping-cart"><span class="badge rounded-pill badge-notification bg-danger">0</span></i>
+      </a>
+      </div>
+        
+        
+      <form class="d-flex justify-content-center">
+          
+          <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="myform bg-dark">
+                <h1 class="text-center">Login Form</h1>
+                <form>
+                    <div class="mb-3 mt-4">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                    <p class="p">Not a member? <a href="#">Signup now</a></p>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+          
+          <button class="btn btn-primary me-2 my-2"  data-bs-toggle="modal" data-bs-target="#ModalForm">Sign in</button>
+        <input class="form-control me-2 w-auto my-2" type="search" placeholder="Search" aria-label="Search" style="background-color: white;padding: 5px;border-radius: 5px;padding-left: 3px;">
+        <button class="btn btn-outline-success my-2" type="submit">Search</button>
+      </form>
+        <section class="sphere m-2">
+         <div class="sphere-box">
+             <div class="shine"></div>
+         </div>
+    </section>
+    </div>
+  </div>
+</nav>
+    <!--This is the 'add to cart' offcanvas-->
+    <div class="offcanvas offcanvas-end w-50" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" style="min-width: 100px;max-width: 300px;">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><i class="fa-solid fa-cart-shopping"></i></h5>
+    <button type="button" class="btn-close text-reset m-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+        <hr>
+  <div class="offcanvas-body text-center">
+    <p>No products in the cart.</p>
+  </div>
+</div>
+    <!--This is the 'add to cart' offcanvas-->
+<!-- Navbar -->
+    
+         <!--Card section starts here-->
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+    <div class="col-lg-3 col-md-8 col-sm-12 col-12 m-3 wow fadeInUpBig" data-wow-duration="2s">
+    <ul class="list-group border py-2">
+  <li class="list-group-item card-head pb-3 border-bottom" style="font-weight: 700;border-bottom: none;"><h4 class="fs-6">FILTER SELECTION</h4></li>
+    <h5 class="px-3 py-2">Categories</h5>
+  <a href="cakes.html" class="text-decoration-none"><li class="list-group-item hover" style="border:none;"><span class="p-1">Cakes</span></li></a><hr class="m-2">
+<a href="pastries.html" class="text-decoration-none"><li class="list-group-item hover" style="border:none;"><span class="p-1">Pastries</span></li></a><hr class="m-2">
+  <a href="cookies.html" class="text-decoration-none"><li class="list-group-item hover" style="border:none;"><span class="p-1">Cookies</span></li></a><hr class="m-2">
+  <a href="pies.html" class="text-decoration-none"><li class="list-group-item hover" style="border:none;"><span class="p-1">Pies</span></li></a>
+        <li class="list-group-item card-head pb-3 border-top" style="font-weight: 700;border-bottom: none;"><h4 class="fs-6">FILTER BY PRICE</h4><input type="range" class="form-range" id="customRange1"></li>
+        <button class="btn w-50 m-auto btn-up" style="border: 1px solid sandybrown;box-shadow: none !important;font-weight: bold;font-family: 'Josefin Sans', sans-serif;">FILTER</button>
+        <p class="text-center my-1" style="font-family: Lato;"><strong>Price:</strong> ₨420 — ₨650</p>
+<li class="list-group-item card-head pb-3 border-top" style="font-weight: 700;border-bottom: none;"><h4 class="fs-6">FILTER BY SIZE</h4></li>
+        <div class="row text-center" style="font-size: 14px;">
+        <div class="col-4 hover-brown">Double</div>
+        <div class="col-4 hover-brown">Large</div>
+        <div class="col-4 hover-brown">Medium</div>
+        <div class="col-4 hover-brown">Mini</div>
+        <div class="col-4 hover-brown">Single</div>
+        <div class="col-4 hover-brown">Small</div>
+        </div>
+        </ul>
+    </div>
+    <div class="col-12 col-lg-8 col-md-12 col-sm-12 m-3">
+    <div class="row border mx-1 wow rotateInUpRight" data-wow-duration="2s">
+        <div class="col justify-content-center p-2">
+            <ul class="nav nav-tabs" style="font-family: 'Josefin Sans', sans-serif;">
+  <li class="nav-item mx-1">
+    <a class="nav-link active" aria-current="page" href="#" style="color: sandybrown;"><i class="fa-solid fa-table-cells icons active"></i></a>
+  </li>
+    <li class="nav-item mx-1">
+    <a class="nav-link" href="#!"><i class="fa-solid fa-list icons" style="color: gray;"></i></a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: gray;">Filter</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li></ul>
+  </li>
+    <li class="nav-item mx-1 d-flex align-items-center justify-content-center mx-auto">
+        <p class="pt-3">Showing 1–12 of 214 results</p>
+  </li>
+    <li class="nav-item mx-1 d-flex align-items-center">
+    <p class="pt-3">Sort by: </p>
+        <select name="" id="" class="mx-2 border select">
+        <option value="">Default sorting</option>
+        <option value="">Sort by popularity</option>
+        <option value="">Sort by average rating</option>
+        <option value="">Sort by latest</option>
+        <option value="">Sort by price: low to high</option>
+        <option value="">Sort by price: high to low</option>
+        </select>
+  </li>
+</ul></div>
+    </div>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 p-2 m-1 border">
+        <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click1">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/FALL CHOCOLATE CHUNK.png" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">FALL CHOCOLATE CHUNK</a></h5>
+          <p class="small text-muted font-italic">Dark, milk &amp; white chocolate, dairy cream, chocolate, flour, butter, sugar. Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts.<br>  RS: 500.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click2">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/Coffee Cake Cookie.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Coffee Cake Cookie</a></h5>
+          <p class="small text-muted font-italic">They’re buttery, gooey, rich, soft, cinnamony with a crusty topping (which let’s be honest is the best part of a coffee cake).<br>RS: 320.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click3">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/Dark Red Velvet Cookie.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Dark Red Velvet Cookie</a></h5>
+          <p class="small text-muted font-italic">Rich Red Velvet Cookies stuffed with Cream Cheese Frosting!<br>RS: 280.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click4">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/Nutella Chocolate Chunk Cookie2.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Nutella Chocolate Chunk Cookie</a></h5>
+          <p class="small text-muted font-italic">Our twist on a traditional Nutella Stuffed Cookie, made with premium dutch cocoa and of course, stuffed with Nutella :-)  <br>RS: 280.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+         <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click5">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/Chocolate Chip Walnut.png" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Chocolate Chip Walnut Cookie</a></h5>
+          <p class="small text-muted font-italic">Our signature Chocolate Chip Walnut Cookie is crispy on the outside with a satisfyingly thick and gooey center. Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts<br>RS: 300.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click6">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/Two Chip Chocolate Chip.png" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Two Chip Chocolate Chip Cookie</a></h5>
+          <p class="small text-muted font-italic">Perfectly crispy on the outside and satisfyingly thick and gooey in the center, this cookie is brimming with semi-sweet and dark chocolate chips for a rich depth of flavor. Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts.<br>RS: 320.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click7">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/Dark Chocolate Peppermint2.png" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Dark Chocolate Peppermint Cookie</a></h5>
+          <p class="small text-muted font-italic">This luxe cookie has a dark and rich chocolate dough peppered with soft red and white peppermint chips that is sure to satisfy. Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts.<br>RS: 280.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click8">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/Dark Chocolate Chip Cookie2.png" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Dark Chocolate Chip Cookie</a></h5>
+          <p class="small text-muted font-italic">Crafted with extra dark French cocoa and semisweet chocolate chips, these cookies are sure to satisfy even the biggest chocoholic. Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts<br>RS: 355.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click9">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/Dark Chocolate Peanut Butter Chip Cookie.png" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Dark Chocolate Peanut Butter Chip Cookie</a></h5>
+          <p class="small text-muted font-italic">Dark chocolate cookie dough is packed with soft, smooth peanut butter chips to create the perfect cookie confection. Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts<br>RS: 520.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click10">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/Oreo Chocolate Chunk Cookie.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Oreo Chocolate Chunk Cookie</a></h5>
+          <p class="small text-muted font-italic">Crunchy Oreo bits with our vanilla batter cookie and Belgian chocolate chunks! Allergens: Gluten, dairy<br>RS: 280.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+            <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click11">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/Signature Chocolate Chunk Cookie2.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Signature Chocolate Chunk Cookie</a></h5>
+          <p class="small text-muted font-italic">The cookie that started it all for us! 3 kinds of Chocolate and pure butter in a vanilla batter. A Classic Choc Chunk Cookie. Allergens: Gluten, dairy, eggs, chocolate contains soya <br>RS: 250.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+            <div class="col mb-4">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0 wow rotateInUpRight card-hover" style="height: 100%;" data-wow-duration="2s" id="click12">
+        <div class="card-body p-4"><img src="assets/Images/products cookies images/Chewy Confetti Cookie.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Chewy Confetti Cookie</a></h5>
+          <p class="small text-muted font-italic">Vanilla batter with confetti (sprinkles) and white chocolate. Allergens: Gluten, dairy, chocolate contains soya <br> RS: 180.00</p>
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--Card section ends here-->
+      
+	<!--Popup section starts here-->
+   <div id="main1" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content1" class="w-75 h-auto bg-light position-relative justify-content-center" style="left: 15%;top: 25%;bottom: 10%;">
+       <button type="button" class="btn-close close" id="close1"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/FALL CHOCOLATE CHUNK2.png" class="float-start w-100 h-75 main-img-1" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Fall Chocolate Chunk Cookie</strong><br>When it comes to fall spices, we’re here for timely, deep flavors of ginger, nutmeg, clove, cinnamon and molasses — because pumpkin isn't the only fall flavor to love. This rich, seasonal cookie is sure to delight thanks to nuanced flavors freckled with melty Valrhona chocolate. It’s crispy, it’s ooey-gooey, and it’s only here for the season, so don’t sleep on this one.<br>Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts.<br> Rs: 500.00<i class="fa-solid fa-heart ms-3 fs-4" id="heart1"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish1" type="button1">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish1" type="button1">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/FALL CHOCOLATE CHUNK.png" class="float-start w-100 h-100 img-1" alt="..."></div>
+       <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"> <img src="assets/Images/products cookies images/FALL CHOCOLATE CHUNK2.png" class="float-start w-100 h-100 img-2" alt="...">  </div>  </div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+    
+    <div id="main2" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content2" class="w-75 h-auto bg-light position-relative justify-content-center" style="left: 15%;top: 25%;bottom: 10%;">
+       <button type="button" class="btn-close close" id="close2"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/Coffee Cake Cookie2.png" class="float-start w-100 h-75 main-img-2" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Coffee Cake Cookie</strong><br>They’re buttery, gooey, rich, soft, cinnamony with a crusty topping (which let’s be honest is the best part of a coffee cake).<br>
+Allergens: Dairy, eggs, chocolate contains soya<br> Rs: 320.00
+ <i class="fa-solid fa-heart ms-3 fs-4" id="heart2"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish2" type="button">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish2" type="button">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Coffee Cake Cookie.jpg" class="float-start w-100 h-100 img-3" alt="..."></div>
+       <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"> <img src="assets/Images/products cookies images/Coffee Cake Cookie2.png" class="float-start w-100 h-100 img-4" alt="...">  </div>  </div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+	
+	<div id="main3" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content3" class="w-75 h-auto bg-light position-relative justify-content-center" style="left: 15%;top: 25%;bottom: 10%;">
+       <button type="button" class="btn-close close" id="close3"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/Dark Red Velvet Cookie2.jpg" class="float-start w-100 h-75 main-img-3" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Dark Red Velvet Cookie</strong><br>Rich Red Velvet Cookies stuffed with Cream Cheese Frosting! Red velvet cookies are chewy with a slight hint of cocoa and pools of melty white chocolate chunks. They're perfect for Valentine's Day, or really any day!<br>
+Allergens: Gluten, eggs, dairy, nuts<br> Rs: 280.00
+ <i class="fa-solid fa-heart ms-3 fs-4" id="heart3"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish3" type="button">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish3" type="button">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Dark Red Velvet Cookie.jpg" class="float-start w-100 h-100 img-5" alt="..."></div>
+       <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"> <img src="assets/Images/products cookies images/Dark Red Velvet Cookie2.jpg" class="float-start w-100 h-100 img-6" alt="...">  </div>  </div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+    
+    <div id="main4" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content4" class="w-75 h-auto bg-light position-relative justify-content-center" style="left: 15%;top: 25%;bottom: 10%;">
+       <button type="button" class="btn-close close" id="close4"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/Nutella Chocolate Chunk Cookie.jpg" class="float-start w-100 h-75 main-img-4" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Nutella Chocolate Chunk Cookie</strong><br>Our twist on a traditional Nutella Stuffed Cookie, made with premium dutch cocoa and of course, stuffed with Nutella :-&#41;. Authentic soft &amp; gooey cookie with 100% imported chocolate chunks!<br>
+Allergens: Dairy, gluten<br> Rs: 155.00
+ <i class="fa-solid fa-heart ms-3 fs-4" id="heart4"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish4" type="button">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish4" type="button">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Nutella Chocolate Chunk Cookie2.jpg" class="float-start w-100 h-100 img-7" alt="..."></div>
+       <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"> <img src="assets/Images/products cookies images/Nutella Chocolate Chunk Cookie.jpg" class="float-start w-100 h-100 img-8" alt="...">  </div>  </div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+    
+    <div id="main5" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content5" class="w-75 h-auto bg-light position-relative justify-content-center" style="top: 25%;left: 15%;">
+       <button type="button" class="btn-close close" id="close5"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/Chocolate Chip Walnut2.png" class="float-start w-100 h-75 main-img-5" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Chocolate Chip Walnut Cookie</strong><br>The cookie that started it all! Our signature Chocolate Chip Walnut Cookie is crispy on the outside with a satisfyingly thick and gooey center. Every bite is packed with semi-sweet chocolate chips and chunks of walnuts. Each gift box contains either four, eight or twelve 6-ounce cookies, packed in beautiful cellophane bags with hand-tied blue ribbons.<br>
+Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts<br> Rs: 300.00
+ <i class="fa-solid fa-heart ms-3 fs-4" id="heart5"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish5" type="button">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish5" type="button">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Chocolate Chip Walnut.png" class="float-start w-100 h-100 img-9" alt="..."></div>
+       <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"> <img src="assets/Images/products cookies images/Chocolate Chip Walnut2.png" class="float-start w-100 h-100 img-10" alt="...">  </div>  </div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+    
+    <div id="main6" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content6" class="w-75 h-auto bg-light position-relative justify-content-center" style="top: 25%;left: 15%;">
+       <button type="button" class="btn-close close" id="close6"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/Two Chip Chocolate Chip2.png" class="float-start w-100 h-75 main-img-6" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Two Chip Chocolate Chip Cookie</strong><br>Introducing Two Chip Chocolate Chip – our decadent take on a classic chocolate chip cookie made without nuts. Perfectly crispy on the outside and satisfyingly thick and gooey in the center, this cookie is brimming with semi-sweet and dark chocolate chips for a rich depth of flavor. Each gift box contains either four, eight or twelve 6-ounce cookies, packed in beautiful cellophane bags with hand-tied blue ribbons.<br>
+Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts<br> Rs: 320.00
+ <i class="fa-solid fa-heart ms-3 fs-4" id="heart6"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish6" type="button">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish6" type="button">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Two Chip Chocolate Chip.png" class="float-start w-100 h-100 img-11" alt="..."></div>
+       <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"> <img src="assets/Images/products cookies images/Two Chip Chocolate Chip2.png" class="float-start w-100 h-100 img-12" alt="...">  </div>  </div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+    
+    <div id="main7" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content7" class="w-75 h-auto bg-light position-relative justify-content-center" style="top: 25%;left: 15%;">
+       <button type="button" class="btn-close close" id="close7"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/Dark Chocolate Peppermint.png" class="float-start w-100 h-75 main-img-7" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Dark Chocolate Peppermint Cookie</strong><br>Tis the season, and we’re not holding back. This luxe cookie has a dark and rich chocolate dough peppered with soft red and white peppermint chips that is sure to satisfy. Crispy on the outside and gooey on the inside, every bite packs a warming, holiday tingle. Bring it to the ice rink, indulge on the couch in your holiday jammies and share as a sweet gift — wherever you enjoy it, you’ll be transported to a winter wonderland.<br>
+Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts<br> Rs: 280.00
+ <i class="fa-solid fa-heart ms-3 fs-4" id="heart7"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish7" type="button">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish7" type="button">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Dark Chocolate Peppermint2.png" class="float-start w-100 h-100 img-13" alt="..."></div>
+       <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"> <img src="assets/Images/products cookies images/Dark Chocolate Peppermint.png" class="float-start w-100 h-100 img-14" alt="...">  </div>  </div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+    
+    <div id="main8" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content8" class="w-75 h-auto bg-light position-relative justify-content-center" style="top: 25%;left: 15%;">
+       <button type="button" class="btn-close close" id="close8"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/Dark Chocolate Chip Cookie.png" class="float-start w-100 h-75 main-img-8" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Dark Chocolate Chip Cookie</strong><br>The ultimate chocolate cookie: dense, chewy and dangerously rich. Crafted with extra dark French cocoa and semisweet chocolate chips, these cookies are sure to satisfy even the biggest chocoholic. Each gift box contains either four, eight or twelve 6-ounce cookies, packed in beautiful cellophane bags with hand-tied blue ribbons.<br>
+Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts<br> Rs: 355.00
+ <i class="fa-solid fa-heart ms-3 fs-4" id="heart8"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish8" type="button">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish8" type="button">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Dark Chocolate Chip Cookie2.png" class="float-start w-100 h-100 img-15" alt="..."></div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Dark Chocolate Chip Cookie.png" class="float-start w-100 h-100 img-16" alt="..."></div></div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+    
+    <div id="main9" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content9" class="w-75 h-auto bg-light position-relative justify-content-center" style="top: 25%;left: 15%;">
+       <button type="button" class="btn-close close" id="close9"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/Dark Chocolate Peanut Butter Chip Cookie2.png" class="float-start w-100 h-75 main-img-9" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Dark Chocolate Peanut Butter Chip Cookie</strong><br>Sweet, savory and perfectly balanced, these cookies satisfy cravings for peanut butter and chocolate lovers. Dark chocolate cookie dough is packed with soft, smooth peanut butter chips to create the perfect cookie confection. Each gift box contains either four, eight or twelve 6-ounce cookies, packed in beautiful cellophane bags with hand-tied blue ribbons.<br>
+Allergens: dairy, eggs, soy, wheat, peanuts, tree nuts<br> Rs: 520.00
+ <i class="fa-solid fa-heart ms-3 fs-4" id="heart9"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish9" type="button">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish9" type="button">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Dark Chocolate Peanut Butter Chip Cookie.png" class="float-start w-100 h-100 img-17" alt="..."></div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Dark Chocolate Peanut Butter Chip Cookie2.png" class="float-start w-100 h-100 img-18" alt="..."></div></div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+    
+    <div id="main10" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content10" class="w-75 h-auto bg-light position-relative justify-content-center" style="top: 25%;left: 15%;">
+       <button type="button" class="btn-close close" id="close10"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/Oreo Chocolate Chunk Cookie2.jpg" class="float-start w-100 h-100 main-img-10" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Oreo Chocolate Chunk Cookie</strong><br>Crunchy Oreo bits with our vanilla batter cookie and Belgian chocolate chunks! <br>Allergens: Gluten, dairy <br> Rs: 280.00
+ <i class="fa-solid fa-heart ms-3 fs-4" id="heart10"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish10" type="button">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish10" type="button">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Oreo Chocolate Chunk Cookie.jpg" class="float-start w-100 h-100 img-19" alt="..."></div>
+       <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"> <img src="assets/Images/products cookies images/Oreo Chocolate Chunk Cookie2.jpg" class="float-start w-100 h-100 img-20" alt="...">  </div>  </div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+    
+    <div id="main11" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content11" class="w-75 h-auto bg-light position-relative justify-content-center" style="top: 25%;left: 15%;">
+       <button type="button" class="btn-close close" id="close11"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/Signature Chocolate Chunk Cookie2.jpg" class="float-start w-100 h-75 main-img-11" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Signature Chocolate Chunk Cookie</strong><br>The cookie that started it all for us! 3 kinds of Chocolate and pure butter in a vanilla batter. A Classic Choc Chunk Cookie.<br>
+Allergens: Gluten, dairy, eggs, chocolate contains soya<br> Rs: 520.00
+ <i class="fa-solid fa-heart ms-3 fs-4" id="heart11"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish11" type="button">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish11" type="button">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Signature Chocolate Chunk Cookie.jpg" class="float-start w-100 h-100 img-21" alt="..."></div>
+       <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"> <img src="assets/Images/products cookies images/Signature Chocolate Chunk Cookie2.jpg" class="float-start w-100 h-100 img-22" alt="...">  </div>  </div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+    
+    <div id="main12" class="w-100 h-100 position-fixed top-0 left-0 overflow-auto" style="background-color: rgba(0,0,0,0.4);">
+    <div id="content12" class="w-75 h-auto bg-light position-relative justify-content-center" style="top: 25%;left: 15%;">
+       <button type="button" class="btn-close close" id="close12"></button>
+        <div class="row p-5 justify-content-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 my-auto"><img src="assets/Images/products cookies images/Chewy Confetti Cookie2.jpg" class="float-start w-100 h-75 main-img-12" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center h-auto" style="font-family: 'Josefin Sans', sans-serif;"><strong>Chewy Confetti Cookie</strong><br>Vanilla batter with confetti (sprinkles) and white chocolate.<br>
+Allergens: Gluten, dairy, eggs, chocolate contains soya<br> RS: 180.00
+ <i class="fa-solid fa-heart ms-3 fs-4" id="heart12"></i><br>
+        <button class="btn btn-success my-1">Add to Cart &nbsp;<i class="fa-solid fa-cart-shopping"></i></button>  
+        <button class="btn btn-danger my-1" id="wish12" type="button">Add to wishlist</button>
+        <button class="btn btn-danger my-1" id="notwish12" type="button">Remove from wishlist</button><br>
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"><img src="assets/Images/products cookies images/Chewy Confetti Cookie.jpg" class="float-start w-100 h-100 img-23" alt="..."></div>
+       <div class="col-lg-3 col-md-4 col-sm-4 col-5 my-3"> <img src="assets/Images/products cookies images/Chewy Confetti Cookie2.jpg" class="float-start w-100 h-100 img-24" alt="...">  </div>  </div>
+        
+        </div>
+        </div>
+       </div>
+    </div>
+    <!--Popup section starts here-->
+ <!--Footer section starts here-->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid mt-5">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-black"
+          style="background-image: linear-gradient(to left,#F8EFBA 33%,#FAEC9A 66%,cornsilk 100%);"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class=" mb-2">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              
+            <h6 class="text-uppercase mb-4 font-weight-bold text-warning fs-5 logo" style="font-family: cursive;">
+             <img src="assets/Images/Bakery logo.png" alt="" class="w-25"> Bakerz Bite
+            </h6>
+           <span class="type" style="--n:53">Bakerz Bite offers a wide range of baked goods made fresh in-store every day. The bakery chain offers more than 300 different kinds of baked goods, including artisan pastries, gourmet cakes and desserts, and handcrafted beverages.</span>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-5">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-black" href="cakes.html" style="text-decoration: underline;">Cakes</a>
+            </p>
+            <p>
+              <a class="text-black" href="pastries.html" style="text-decoration: underline;">Pastries</a>
+            </p>
+            <p>
+              <a class="text-black" href="cookies.html" style="text-decoration: underline;">Cookies</a>
+            </p>
+            <p>
+              <a class="text-black" href="pies.html" style="text-decoration: underline;">Pies</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
+            <h6 class="text-uppercase mb-4 mt-5 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Karachi, North Karachi, Pakistan</p>
+            <p><i class="fas fa-envelope mr-3"></i> bakerzbite@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-5">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Facebook -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #3b5998"
+               href="https://facebook.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #55acee"
+               href="https://twitter.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #dd4b39"
+               href="https://google.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #ac2bac"
+               href="https://instagram.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #0082ca"
+               href="https://linkedin.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-linkedin-in"></i
+              ></a>
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #333333"
+               href="https://github.com/"
+               target="_blank"
+               role="button"
+               ><i class="fab fa-github"></i
+              ></a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(100, 0, 0, 0.2)"
+         >
+      © 2022 Copyright:
+      <a class="text-white" href="index.html"
+         >Bakerzbite.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+    
+    <!--Footer section ends here-->
+
+</body>
+    <!--This is my Bootstrap Javascript File-->
+    <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+    
+    <!--This is my jQuery File-->
+    <script src="assets/jquery/jquery.js"></script>
+    
+    <script>
+		$('#main1,#main2,#main3,#main4,#main5,#main6,#main7,#main8,#main9,#main10,#main11,#main12').hide();
+        
+        $(document).ready(function(){
+           $('#wish1').click(function(){
+              $('#heart1').css({
+                 color:'red' 
+              });
+           });
+        });
+        $(document).ready(function(){
+           $('#close1').click(function(){
+              $('#main1').hide(); 
+           }); 
+        });
+    $(document).ready(function(){
+       $('#click1').click(function(){
+           $('#main1').show();
+       });
+    });
+		
+	$(document).ready(function(){
+           $('#wish2').click(function(){
+              $('#heart2').css({
+                 color:'red' 
+              });
+           });
+        });
+        $(document).ready(function(){
+           $('#close2').click(function(){
+              $('#main2').hide(); 
+           }); 
+        });
+    $(document).ready(function(){
+       $('#click2').click(function(){
+           $('#main2').show();
+       });
+    });
+		
+	$(document).ready(function(){
+           $('#wish3').click(function(){
+              $('#heart3').css({
+                 color:'red' 
+              });
+           });
+        });
+        $(document).ready(function(){
+           $('#close3').click(function(){
+              $('#main3').hide(); 
+           }); 
+        });
+    $(document).ready(function(){
+       $('#click3').click(function(){
+           $('#main3').show();
+       });
+    });
+        
+    $(document).ready(function(){
+           $('#wish4').click(function(){
+              $('#heart4').css({
+                 color:'red' 
+              });
+           });
+        });
+        
+        $(document).ready(function(){
+           $('#close4').click(function(){
+              $('#main4').hide(); 
+           }); 
+        });
+        
+    $(document).ready(function(){
+       $('#click4').click(function(){
+           $('#main4').show();
+       });
+    });
+        
+    $(document).ready(function(){
+           $('#wish5').click(function(){
+              $('#heart5').css({
+                 color:'red' 
+              });
+           });
+        });
+        
+        $(document).ready(function(){
+           $('#close5').click(function(){
+              $('#main5').hide(); 
+           }); 
+        });
+        
+    $(document).ready(function(){
+       $('#click5').click(function(){
+           $('#main5').show();
+       });
+    });
+        
+    $(document).ready(function(){
+           $('#wish6').click(function(){
+              $('#heart6').css({
+                 color:'red' 
+              });
+           });
+        });
+        
+        $(document).ready(function(){
+           $('#close6').click(function(){
+              $('#main6').hide(); 
+           }); 
+        });
+        
+    $(document).ready(function(){
+       $('#click6').click(function(){
+           $('#main6').show();
+       });
+    });
+        
+    $(document).ready(function(){
+           $('#wish7').click(function(){
+              $('#heart7').css({
+                 color:'red' 
+              });
+           });
+        });
+        
+        $(document).ready(function(){
+           $('#close7').click(function(){
+              $('#main7').hide(); 
+           }); 
+        });
+        
+    $(document).ready(function(){
+       $('#click7').click(function(){
+           $('#main7').show();
+       });
+    });
+        
+    $(document).ready(function(){
+           $('#wish8').click(function(){
+              $('#heart8').css({
+                 color:'red' 
+              });
+           });
+        });
+        
+        $(document).ready(function(){
+           $('#close8').click(function(){
+              $('#main8').hide(); 
+           }); 
+        });
+        
+    $(document).ready(function(){
+       $('#click8').click(function(){
+           $('#main8').show();
+       });
+    });
+        
+    $(document).ready(function(){
+           $('#wish9').click(function(){
+              $('#heart9').css({
+                 color:'red' 
+              });
+           });
+        });
+        
+        $(document).ready(function(){
+           $('#close9').click(function(){
+              $('#main9').hide(); 
+           }); 
+        });
+        
+    $(document).ready(function(){
+       $('#click9').click(function(){
+           $('#main9').show();
+       });
+    });
+        
+    $(document).ready(function(){
+           $('#wish10').click(function(){
+              $('#heart10').css({
+                 color:'red' 
+              });
+           });
+        });
+        
+        $(document).ready(function(){
+           $('#close10').click(function(){
+              $('#main10').hide(); 
+           }); 
+        });
+        
+    $(document).ready(function(){
+       $('#click10').click(function(){
+           $('#main10').show();
+       });
+    });
+    
+    $(document).ready(function(){
+           $('#wish11').click(function(){
+              $('#heart11').css({
+                 color:'red' 
+              });
+           });
+        });
+        
+        $(document).ready(function(){
+           $('#close11').click(function(){
+              $('#main11').hide(); 
+           }); 
+        });
+        
+    $(document).ready(function(){
+       $('#click11').click(function(){
+           $('#main11').show();
+       });
+    });
+        
+    $(document).ready(function(){
+           $('#wish12').click(function(){
+              $('#heart12').css({
+                 color:'red' 
+              });
+           });
+        });
+        
+        $(document).ready(function(){
+           $('#close12').click(function(){
+              $('#main12').hide(); 
+           }); 
+        });
+        
+    $(document).ready(function(){
+       $('#click12').click(function(){
+           $('#main12').show();
+       });
+    });
+        
+    $(document).ready(function(){
+       $('#notwish1').click(function(){
+          $('#heart1').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+    $(document).ready(function(){
+       $('#notwish2').click(function(){
+          $('#heart2').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+    $(document).ready(function(){
+       $('#notwish3').click(function(){
+          $('#heart3').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+    $(document).ready(function(){
+       $('#notwish4').click(function(){
+          $('#heart4').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+    $(document).ready(function(){
+       $('#notwish5').click(function(){
+          $('#heart5').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+    $(document).ready(function(){
+       $('#notwish6').click(function(){
+          $('#heart6').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+    $(document).ready(function(){
+       $('#notwish7').click(function(){
+          $('#heart7').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+    $(document).ready(function(){
+       $('#notwish8').click(function(){
+          $('#heart8').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+    $(document).ready(function(){
+       $('#notwish9').click(function(){
+          $('#heart9').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+    $(document).ready(function(){
+       $('#notwish10').click(function(){
+          $('#heart10').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+    $(document).ready(function(){
+       $('#notwish11').click(function(){
+          $('#heart11').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+    $(document).ready(function(){
+       $('#notwish12').click(function(){
+          $('#heart12').css({
+             color:'black' 
+          }); 
+       }); 
+    });
+        
+      $(document).ready(function(){
+    $(".img-1").click(function(){
+        $('.main-img-1').attr("src", "assets/Images/products cookies images/Fall Chocolate Chunk.png");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-2").click(function(){
+        $('.main-img-1').attr("src", "assets/Images/products cookies images/Fall Chocolate Chunk2.png");
+    });    
+});
+        
+    $(document).ready(function(){
+    $(".img-3").click(function(){
+        $('.main-img-2').attr("src", "assets/Images/products cookies images/Coffee Cake Cookie.jpg");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-4").click(function(){
+        $('.main-img-2').attr("src", "assets/Images/products cookies images/Coffee Cake Cookie2.png");
+    });    
+});
+        
+    $(document).ready(function(){
+    $(".img-5").click(function(){
+        $('.main-img-3').attr("src", "assets/Images/products cookies images/Dark Red Velvet Cookie.jpg");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-6").click(function(){
+        $('.main-img-3').attr("src", "assets/Images/products cookies images/Dark Red Velvet Cookie2.jpg");
+    });    
+});
+        
+    $(document).ready(function(){
+    $(".img-7").click(function(){
+        $('.main-img-4').attr("src", "assets/Images/products cookies images/Nutella Chocolate Chunk Cookie2.jpg");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-8").click(function(){
+        $('.main-img-4').attr("src", "assets/Images/products cookies images/Nutella Chocolate Chunk Cookie.jpg");
+    });    
+});
+        
+    $(document).ready(function(){
+    $(".img-9").click(function(){
+        $('.main-img-5').attr("src", "assets/Images/products cookies images/Chocolate Chip Walnut.png");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-10").click(function(){
+        $('.main-img-5').attr("src", "assets/Images/products cookies images/Chocolate Chip Walnut2.png");
+    });    
+});
+        
+    $(document).ready(function(){
+    $(".img-11").click(function(){
+        $('.main-img-6').attr("src", "assets/Images/products cookies images/Two Chip Chocolate Chip.png");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-12").click(function(){
+        $('.main-img-6').attr("src", "assets/Images/products cookies images/Two Chip Chocolate Chip2.png");
+    });    
+});
+        
+    $(document).ready(function(){
+    $(".img-13").click(function(){
+        $('.main-img-7').attr("src", "assets/Images/products cookies images/Dark Chocolate Peppermint2.png");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-14").click(function(){
+        $('.main-img-7').attr("src", "assets/Images/products cookies images/Dark Chocolate Peppermint.png");
+    });    
+});
+        
+    $(document).ready(function(){
+    $(".img-15").click(function(){
+        $('.main-img-8').attr("src", "assets/Images/products cookies images/Dark Chocolate Chip Cookie2.png");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-16").click(function(){
+        $('.main-img-8').attr("src", "assets/Images/products cookies images/Dark Chocolate Chip Cookie.png");
+    });    
+});
+        
+    $(document).ready(function(){
+    $(".img-17").click(function(){
+        $('.main-img-9').attr("src", "assets/Images/products cookies images/Dark Chocolate Peanut Butter Chip Cookie.png");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-18").click(function(){
+        $('.main-img-9').attr("src", "assets/Images/products cookies images/Dark Chocolate Peanut Butter Chip Cookie2.png");
+    });    
+});
+        
+    $(document).ready(function(){
+    $(".img-19").click(function(){
+        $('.main-img-10').attr("src", "assets/Images/products cookies images/Oreo Chocolate Chunk Cookie.jpg");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-20").click(function(){
+        $('.main-img-10').attr("src", "assets/Images/products cookies images/Oreo Chocolate Chunk Cookie2.jpg");
+    });    
+});
+        
+    $(document).ready(function(){
+    $(".img-21").click(function(){
+        $('.main-img-11').attr("src", "assets/Images/products cookies images/Signature Chocolate Chunk Cookie.jpg");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-22").click(function(){
+        $('.main-img-11').attr("src", "assets/Images/products cookies images/Signature Chocolate Chunk Cookie2.jpg");
+    });    
+});
+        
+    $(document).ready(function(){
+    $(".img-23").click(function(){
+        $('.main-img-12').attr("src", "assets/Images/products cookies images/Chewy Confetti Cookie.jpg");
+    });    
+});
+    $(document).ready(function(){
+    $(".img-24").click(function(){
+        $('.main-img-12').attr("src", "assets/Images/products cookies images/Chewy Confetti Cookie2.jpg");
+    });    
+});
+    </script>
+    
+    <!--This is my WOW Javascript File-->
+    <script src="assets/WOW/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</html>
